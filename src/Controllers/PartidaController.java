@@ -1,10 +1,8 @@
 package Controllers;
 
-import Models.Partida;
-import Models.Personagem;
+import Models.characters.Personagem;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.util.Properties;
 import java.util.Scanner;
 

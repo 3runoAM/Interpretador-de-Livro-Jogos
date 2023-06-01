@@ -1,7 +1,7 @@
-package Models;
+package Models.characters;
 
-import Models.Barra;
-import Models.Inventario;
+import Models.status.Barra;
+import Models.status.Inventario;
 
 public class Personagem {
     private String nome;
@@ -13,7 +13,6 @@ public class Personagem {
     public Personagem(String nome) {
         this.nome = nome;
     }
-
 
     /*Getters&Setters*/
     public String getNome() {

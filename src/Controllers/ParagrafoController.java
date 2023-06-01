@@ -1,19 +1,27 @@
 package Controllers;
 
-import Models.Partida;
+import Builders.ParagrafoBuilder;
+import Builders.ParagrafoBuilderImp;
+import Models.game.Paragrafo;
 
-import java.util.Properties;
 
 public class ParagrafoController {
-    private Properties descricao = new Properties();
-    private Properties escolhas = new Properties();
-    private Properties acoes = new Properties();
-    private Partida partida;
+    private String idParagrafoAtual = "0";
+    private ParagrafoBuilderImp construtorParagrafos;
+    /*Construtor*/
+    // Padrão
 
+    /*Getters*/
+    public String getIdParagrafoAtual() {
+        return idParagrafoAtual;
+    }
+    public void setIdParagrafoAtual(String idAtual){
+        this.idParagrafoAtual = idAtual;
+    }
 
     /*Métodos*/
-    public int idParagrafoAtaul(){
-        return partida.getIdParagrafoAtual();
+    public void atualizaParagrafoAtual(String idAtual){
+        setIdParagrafoAtual(idAtual);
     }
 
 }

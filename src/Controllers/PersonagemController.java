@@ -1,6 +1,6 @@
 package Controllers;
 
-import Models.Personagem;
+import Models.characters.Personagem;
 
 import java.util.Scanner;
 

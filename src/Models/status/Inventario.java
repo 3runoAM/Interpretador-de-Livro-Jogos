@@ -1,4 +1,6 @@
-package Models;
+package Models.status;
+
+import Models.game.Item;
 
 public class Inventario {
     private Item[][] inventario = new Item[3][4];

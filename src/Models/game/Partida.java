@@ -1,4 +1,6 @@
-package Models;
+package Models.game;
+
+import Models.characters.Personagem;
 
 public class Partida {
     private int idParagrafoAtual = 0;

@@ -1,9 +1,8 @@
-package Models;
+package Models.game;
 
 public class Item {
     private String nome;
     private int tamannho;
-
 
     /*Construtor*/
     public Item(String nome, int tamannho) {

@@ -1,8 +1,8 @@
-package Models;
+package Models.status;
 
 public class Barra {
-    private final int TAMANHOMAXIMO = 200;
-    private final int TAMANHOMINIMO = 50;
+    private final static int TAMANHOMAXIMO = 200;
+    private final static int TAMANHOMINIMO = 50;
     private int tamanhoAtual = TAMANHOMINIMO;
     private String tipo;
 
