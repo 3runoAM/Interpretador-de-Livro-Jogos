@@ -8,14 +8,16 @@ public class Paragrafo {
     private String id;
     private String descricao;
     private String tipo; // tipos:
-    private Map<String, Integer> escolhas = new HashMap<>(); // 1. Escolha comum
+    private Map<String, String> escolhas = new HashMap<>(); // 1. Escolha comum
     private Models.game.Batalha Batalha; // 2. Batalha
     private ArrayList<Item> itens; // 3. Item(ns)
+
 
     /*Construtor*/
     public Paragrafo(String id) {
         this.id = id;
     }
+
 
     /*Getters&Setters*/
     public String getId() {
@@ -36,10 +38,10 @@ public class Paragrafo {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-    public Map<String, Integer> getEscolhas() {
+    public Map<String, String> getEscolhas() {
         return escolhas;
     }
-    public void setEscolhas(Map<String, Integer> escolhas) {
+    public void setEscolhas(Map<String, String> escolhas) {
         this.escolhas = escolhas;
     }
     public Models.game.Batalha getBatalha() {
@@ -53,5 +55,12 @@ public class Paragrafo {
     }
     public void setItens(ArrayList<Item> itens) {
         this.itens = itens;
+    }
+
+
+    /*Métodos*/
+    @Override
+    public String toString(){
+        return id + "\n" + descricao;
     }
 }

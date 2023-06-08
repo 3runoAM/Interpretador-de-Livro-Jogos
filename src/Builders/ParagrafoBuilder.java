@@ -12,5 +12,4 @@ public interface ParagrafoBuilder {
     void buildEscolhas() throws IOException;
     void buildItems() throws IOException;
     void buildBatalha() throws IOException;
-    Paragrafo getParagrafo();
 }
